@@ -6,7 +6,7 @@
 ```bash
 kotlinc Main.kt -include-runtime -d output.jar
 ```
-1. Run the application
+4. Run the application
 ```bash
 java -jar output.jar
 ```
