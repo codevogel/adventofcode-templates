@@ -1,6 +1,6 @@
 define parseInput(string path) {
     // Read the file and split it into lines (separated by newlines)
-    const file = read(path)
+    const fileContents = read(path)
     const result = stringSplit(file, "\n")
 
     // Optional: remove empty lines
