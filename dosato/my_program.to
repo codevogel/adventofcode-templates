@@ -1,0 +1,22 @@
+define parseInput(string path) {
+    // Read the file and split it into lines (separated by newlines)
+    const fileContents = read(path)
+    const result = stringSplit(file, "\n")
+
+    // Optional: remove empty lines
+    set result = filter(result, bool (line, i) => { return line != "" })
+
+    // Return the result
+    return result
+}
+
+define main() {
+    const inputPath = "my_input_file.txt"
+    const lines = parseInput(inputPath)
+
+    // Print each line of the resulting array
+    do sayln(line) for line in lines
+}
+
+// Call the entry point
+do main()
