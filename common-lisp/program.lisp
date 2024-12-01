@@ -11,8 +11,12 @@
 
 (defun main ()
   "Solve the AOC problem using the input file in the *FILENAME* variable."
-  ;; Read the lines in from the file and trim spaces off both ends.
-  (let ((lines (mapcar (lambda (line)
-                         (string-trim " " line))
-                   (uiop:read-file-lines *filename*))))
+  ;; Read the lines in from the file, trim spaces off both ends, and filter empty lines.
+  (let ((lines
+         (remove
+             ""
+             (mapcar (lambda (line)
+                       (string-trim " " line))
+                 (uiop:read-file-lines *filename*))
+           :test #'string=)))
     (print-lines lines)))
