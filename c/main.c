@@ -2,25 +2,32 @@
 #include <stdlib.h>
 #include <string.h>
 
-int main() 
-{
-  
-    FILE *fp;
+#define BUF_SIZE 256
 
-    char buf;
-    fp = fopen("input_file.txt", "r");
+void printLines(const char *filename) 
+{
+    FILE *fp;
+    char buf[BUF_SIZE];  
+
+    fp = fopen(filename, "r");
 
     if (!fp) 
     {
-          perror("Error opening file!\n");
-          return -1;
+        perror("Error opening file!\n");
+        return;
     }
 
-    while ((buf = fgetc(fp)) != EOF) 
+    while (fgets(buf, BUF_SIZE, fp)) 
     {
-        printf("%c", buf);
+        printf("%s", buf);
     }
 
     fclose(fp);
+}
+
+int main() 
+{
+    const char *filename = "input_file.txt";
+    printLines(filename);
     return 0;
 }
