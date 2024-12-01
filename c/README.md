@@ -1,6 +1,6 @@
 # How to run
 
-## Setup a C programming enviroment on yout system.
+## Setup a C programming enviroment on your system.
 You need to make sure you have a compiler installed on your system (this can be done with typing ``cc`` or rather usually ``gcc`` in the command line).
 If you get something like command not found you need to move onto installing one.
 
