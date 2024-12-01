@@ -14,7 +14,7 @@ void printLines(const char *filename)
     if (!fp) 
     {
         perror("Error opening file!\n");
-        return;
+        return -1;
     }
 
     while (fgets(buf, BUF_SIZE, fp)) 
