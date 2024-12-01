@@ -21,5 +21,5 @@ Want to add a template for a new language? Feel free to open a pull request!
 ### Contributions:
 - C#, JavaScript, Python: _Kamiel de Visser_
 - Kotlin: _NoahMelle_
-- Dosato: _Robotnik08_
+- Dosato: _RobotNik08_
 - Go: _Mr. Hoorn_ (he also improved the main readme file)
