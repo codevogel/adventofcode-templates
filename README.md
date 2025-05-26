@@ -10,4 +10,4 @@ Read the `README.md` file in the directory of the language you want to use.
 
 # Contributing
 
-Want to add a template for a new language? Feel free to open a pull request! See [CONTRIBUTING](./CONTRIBUTING.MD) for more info on how to contribute.
+Want to add a template for a new language? Feel free to open a pull request! See [CONTRIBUTING](./CONTRIBUTING.md) for more info on how to contribute.
